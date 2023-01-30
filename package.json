@@ -2,8 +2,7 @@
   "name": "scan-emails",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "http://gitlab.nbm.vn/toanhkma/scan-emails.git",
-  "author": "Nguyen Tuan Anh <toanh2612@outlook.com>",
+  "author": "Đỗ Minh Hiếu <minhhieu030920@gmail.com.com>",
   "license": "MIT",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon --watch input.js --watch .env --watch src --exec babel-node ./src/app.js --source-maps",
