@@ -1,20 +1,42 @@
 export default (models) => {
   // eslint-disable-next-line no-empty-pattern
-  const { newspapers, news, newsUrlSlugs } = models;
-
-  // Users.hasMany(Roles, { foreignKey: 'UserId', as: 'RoleDetails' })
-  // Người dùng
-  news.belongsTo(newspapers, {
-    foreignKey: "newspapersId",
-    as: "newspapers",
+  const {
+    biddingPartys,
+    searchTerms,
+    provinces,
+    districts,
+    fields,
+    searchTermsFields,
+    applyProcess,
+  } = models;
+  districts.belongsTo(provinces, {
+    foreignKey: "provincesId",
+    as: "provinces",
   });
 
-  news.hasMany(newsUrlSlugs, {
-    foreignKey: "newsId",
-    as: "newsUrlSlugs",
+  searchTerms.belongsTo(districts, {
+    foreignKey: "districtsId",
+    as: "districts",
   });
-  newsUrlSlugs.belongsTo(news, {
-    foreignKey: "newsId",
-    as: "news",
+  searchTerms.belongsTo(provinces, {
+    foreignKey: "provincesId",
+    as: "provinces",
+  });
+  searchTerms.belongsTo(biddingPartys, {
+    foreignKey: "biddingPartysSearch",
+    as: "biddingPartys",
+  });
+  searchTerms.hasMany(searchTermsFields, {
+    foreignKey: "searchTermsId",
+    as: "searchTermsFields",
+  });
+  searchTermsFields.belongsTo(fields, {
+    foreignKey: "fieldsId",
+    as: "fields",
+  });
+
+  searchTerms.belongsTo(applyProcess, {
+    foreignKey: "applyProcessId",
+    as: "applyProcess",
   });
 };

@@ -1,2 +1,0 @@
-const configs = require('../configs');
-

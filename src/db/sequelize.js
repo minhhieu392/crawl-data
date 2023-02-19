@@ -1,19 +1,19 @@
-import Sequelize from 'sequelize'
-import path from 'path'
+import Sequelize from "sequelize";
+import path from "path";
 // eslint-disable-next-line import/no-extraneous-dependencies
 // import momentTz from 'moment-timezone'
-import dotenv from 'dotenv'
-import config from '../configs'
+import dotenv from "dotenv";
+import config from "../configs";
 
 if (process.env.NODE_ENV === "production") {
-  dotenv.config({ path: path.resolve(process.cwd(), '.env.production') });
+  dotenv.config({ path: path.resolve(process.cwd(), ".env.production") });
 } else {
   dotenv.config();
 }
 // const config = require(path.resolve(__dirname, "/src" + "config.json"))
 // var config = require('../config.json')
 Sequelize.DATE.prototype._stringify = function _stringify(date, options) {
-  return this._applyTimezone(date, options).format('YYYY-MM-DD HH:mm:ss.SSS');
+  return this._applyTimezone(date, options).format("YYYY-MM-DD HH:mm:ss.SSS");
 };
 
 export const { Op } = Sequelize;
@@ -52,66 +52,88 @@ const operatorsAliases = {
   $any: Op.any,
   $all: Op.all,
   $values: Op.values,
-  $col: Op.col
+  $col: Op.col,
 };
+console.log(
+  "aaa",
+  process.env.SQL_DATABASE,
+  process.env.SQL_USER,
+  process.env.SQL_PASSWORD,
+  {
+    host: process.env.SQL_SERVER,
+    port: process.env.SQL_PORT,
+  }
+);
 
 const timezone = "+07:00";
 
-const logging = process.env.NODE_ENV !== 'production' && process.env.LOGGING === 'true' ? console.log : false;
+const logging =
+  process.env.NODE_ENV !== "production" && process.env.LOGGING === "true"
+    ? console.log
+    : false;
 
 // if (process.env.NODE_ENV !== 'production') logging = process.env.LOGGING === 'true';
 
-export const sequelize = new Sequelize(process.env.SQL_DATABASE, process.env.SQL_USER, process.env.SQL_PASSWORD, {
-  host: process.env.SQL_SERVER,
-  port: process.env.SQL_PORT,
-  dialect: 'mysql',
-  // dialectModule: 'require("mysql")',
-  // dialectModulePath: 'mysql2',
-  dialectOptions: {
-    supportBigNumbers: true,
-    bigNumberStrings: true,
-    multipleStatements: true,
-    // timezone,
-    charset: 'utf8',
-    // dateStrings: false,
-    connectTimeout: config.sql.connectionTimeout,
-    // typeCast: (field, next) => {
-    //   if (field.type === 'DATETIME' || field.type === 'TIMESTAMP') {
-    //     // return new Date(field.string() + 'Z');
-    //     // console.log(field.string());
-    //     // return field.string();
-    //     return new Date(field.string());
-    //     // return field.string();
-    //   }
-
-    //   return next();
-    // }
-    // debug: true
-  },
-  pool: {
-    // max: config.sql.pool.max,
-    // min: config.sql.pool.min,
-    // acquire: config.sql.connectionTimeout,
-    // idle: config.sql.pool.idleTimeoutMillis,
-    max: parseInt(config.SQL_POOL_MAX) || config.sql.pool.max,
-    min: parseInt(config.SQL_POOL_MIN) || config.sql.pool.min,
-    acquire: parseInt(config.SQL_POOL_CONNECTION_TIMEOUT) || config.sql.connectionTimeout,
-    idle: parseInt(config.SQL_POOL_IDLE_TIMEOUT_MILLIS) || config.sql.pool.idleTimeoutMillis
-  },
-  define: {
-    createdAt: true,
-    updatedAt: true,
-    underscored: true,
-    freezeTableName: false,
-    charset: 'utf8',
+export const sequelize = new Sequelize(
+  process.env.SQL_DATABASE,
+  process.env.SQL_USER,
+  process.env.SQL_PASSWORD,
+  {
+    host: process.env.SQL_SERVER,
+    port: process.env.SQL_PORT,
+    dialect: "mysql",
+    // dialectModule: 'require("mysql")',
+    // dialectModulePath: 'mysql2',
     dialectOptions: {
+      supportBigNumbers: true,
+      bigNumberStrings: true,
       multipleStatements: true,
-      charset: 'utf8_unicode_ci'
+      // timezone,
+      charset: "utf8",
+      // dateStrings: false,
+      connectTimeout: config.sql.connectionTimeout,
+      // typeCast: (field, next) => {
+      //   if (field.type === 'DATETIME' || field.type === 'TIMESTAMP') {
+      //     // return new Date(field.string() + 'Z');
+      //     // console.log(field.string());
+      //     // return field.string();
+      //     return new Date(field.string());
+      //     // return field.string();
+      //   }
+
+      //   return next();
+      // }
+      // debug: true
     },
-    timestamps: false,
+    pool: {
+      // max: config.sql.pool.max,
+      // min: config.sql.pool.min,
+      // acquire: config.sql.connectionTimeout,
+      // idle: config.sql.pool.idleTimeoutMillis,
+      max: parseInt(config.SQL_POOL_MAX) || config.sql.pool.max,
+      min: parseInt(config.SQL_POOL_MIN) || config.sql.pool.min,
+      acquire:
+        parseInt(config.SQL_POOL_CONNECTION_TIMEOUT) ||
+        config.sql.connectionTimeout,
+      idle:
+        parseInt(config.SQL_POOL_IDLE_TIMEOUT_MILLIS) ||
+        config.sql.pool.idleTimeoutMillis,
+    },
+    define: {
+      createdAt: true,
+      updatedAt: true,
+      underscored: true,
+      freezeTableName: false,
+      charset: "utf8",
+      dialectOptions: {
+        multipleStatements: true,
+        charset: "utf8_unicode_ci",
+      },
+      timestamps: false,
+      timezone, // for writng
+    },
     timezone, // for writng
-  },
-  timezone, // for writng
-  logging,
-  operatorsAliases
-});
+    logging,
+    operatorsAliases,
+  }
+);

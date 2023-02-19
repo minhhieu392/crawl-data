@@ -26,10 +26,21 @@ const models = {};
   }); */
 
 const modules = [
-  require("./news"),
-  require("./newspapers"),
-  require("./newsUrlSlugs"),
-  require("./article")
+  require("./bids"),
+  require("./projects"),
+  require("./biddingPartys"),
+  require("./fields"),
+  require("./provinces"),
+  require("./wards"),
+  require("./districts"),
+  require("./users"),
+  require("./userGroupRoles"),
+  require("./userGroups"),
+  require("./searchTerms"),
+  require("./bidsSearchTerms"),
+  require("./fields"),
+  require("./searchTermsFields"),
+  require("./applyProcess"),
 ];
 
 // Initialize models

@@ -1,14 +1,19 @@
 const puppeteer = require("puppeteer");
+import models from "../entity/index";
 const fs = require("fs");
 const { log } = console;
 const { Worker } = require("worker_threads");
 const async = require("async");
 import dotenv from "dotenv";
-
+import MODELS from "../models/models";
+import moment from "moment";
+const { bids, projects, biddingPartys, fields } = models;
 function timeout(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
-const muasam = (async () => {
+const dataArray = [];
+
+export default muasam = (async () => {
   const browser = await puppeteer.launch({
     headless: false,
     args: ["--disable-features=SaveLinkAs"],
@@ -76,7 +81,7 @@ const muasam = (async () => {
     "#search-advantage-haunt > div > div > div > div.content__footer > button:nth-child(2)",
     (form) => form.click()
   );
-  await timeout(5000);
+  await timeout(4000);
   // page number
   const pages =
     (await page.$$eval(
@@ -93,18 +98,21 @@ const muasam = (async () => {
   const kq1 = [];
   const tasks = [];
   const links = [];
-  for (let i = 1; i <= 1; i++) {
+  const files = [];
+  for (let i = 1; i <= 2; i++) {
     // Lấy dữ liệu từ trang hiện tại
     const data = await page.evaluate(() => {
       // Code lấy dữ liệu từ trang web
       const dataArray = [];
       const linkArray = [];
+      const fileArray = [];
       const divElements =
         document.querySelectorAll(".content__body__left__item") || 0;
       if (divElements === 0) return dataArray;
 
       divElements.forEach((content) => {
         try {
+          let file;
           let links;
           let dataJson = {};
           dataJson.title =
@@ -145,61 +153,54 @@ const muasam = (async () => {
           links = content.querySelector(
             ".content__body__left__item__infor__contract > a"
           ).href;
+          const id_ho_so = links.match(/&id=([a-z0-9-]+)/)[1];
+          file = `https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=${id_ho_so}&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u`;
+          fileArray.push(file);
           linkArray.push(links);
           dataArray.push(dataJson);
         } catch (err) {
           console.log(err);
         }
       });
-      return { dataArray, linkArray };
+      return { dataArray, linkArray, fileArray };
     });
     // Lưu dữ liệu vào mảng
     kq.push(...data.dataArray);
     links.push(...data.linkArray);
-
-    // tasks.push((callback) => {
-    //   const worker = new Worker("./src/workers/muasam.worker.js");
-    //   worker.postMessage(data.linkArray);
-    //   worker.on("message", (message) => {
-
-    //     callback(null, message);
-    //   });
-    //   worker.on("error", (error) => {
-    //     callback(error);
-    //   });
-    //   worker.on("exit", (code) => {
-    //     if (code !== 0)
-    //       callback(new Error(`Worker stopped with exit code ${code}`));
-    //   });
-    // });
+    // fields.push(...data.fileArray);
 
     // Click vào nút chuyển trang
     if (i < numPages) {
       let nextButton = await page.$(
         "#search-home > div.content__wrapper.background--white > div:nth-child(1) > div.content__body__left > div:nth-child(1) > div > div > div > button.btn-next"
       );
+
       if (nextButton) {
         await nextButton.click();
-
         await new Promise((resolve) => setTimeout(resolve, 1000));
       }
     }
   }
+
   fs.writeFileSync("data.json", JSON.stringify(kq));
+  // await page.close();
 
   const promises = [];
   const limit = process.env.LIMIT_TAB;
   const downloadPath = process.env.DOWNLOAD_PATH;
   let mid;
-  for (let i = 0; i < links.length; i += limit) {
-    const group = links.slice(i, i + limit);
+
+  for (let i = 0; i < links.length; i += 5) {
+    const group = links.slice(i, i + 5);
     promises.push(
       Promise.all(
         group.map(async (link) => {
+          const ho_so = link.match(/&id=([a-z0-9-]+)/)[1];
+          const urlDownload = `https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=${ho_so}&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u`;
           const newPage = await browser.newPage();
           await newPage.goto(link);
 
-          await page.waitForTimeout(15000);
+          await page.waitForTimeout(10000);
           // lấy dữ liệu từ trang
           const data = await newPage.evaluate(() => {
             const jsonLinks = {};
@@ -253,18 +254,25 @@ const muasam = (async () => {
                 document.querySelector(
                   "#info-general > div:nth-child(4) > div.card-body.d-flex.flex-column.align-items-start.infomation > div.d-flex.flex-row.align-items-start.infomation__content.w-100 > div.infomation__content__title"
                 ).innerText || "";
+
               jsonLinks.hinh_thuc_lua_chon_nha_thau =
                 document.querySelector(
                   "#info-general > div:nth-child(4) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(6) > div:nth-child(2)"
                 ).innerText || "";
+
               jsonLinks.loai_hop_dong =
                 document.querySelector(
                   "#info-general > div:nth-child(4) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(7) > div:nth-child(2)"
                 ).innerText || "";
-              jsonLinks.trongnuoc_quocte =
-                document.querySelector(
-                  "#info-general > div:nth-child(4) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(8) > div:nth-child(2)"
-                ).innerText || "";
+
+              //trong nước - quốc tế
+
+              document.querySelector(
+                "#info-general > div:nth-child(4) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(8) > div:nth-child(2)"
+              ).innerText === "Trong nước"
+                ? (jsonLinks.trongnuoc_quocte = 1)
+                : (jsonLinks.trongnuoc_quocte = 0);
+
               jsonLinks.phuong_thuc_lua_chon_nha_thau =
                 document.querySelector(
                   "#info-general > div:nth-child(4) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(9) > div:nth-child(2)"
@@ -295,10 +303,11 @@ const muasam = (async () => {
                 document.querySelector(
                   "#info-general > div:nth-child(4) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(6) > div:nth-child(2)"
                 ).innerText || "";
-              jsonLinks.trongnuoc_quocte =
-                document.querySelector(
-                  "#info-general > div:nth-child(4) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(7) > div:nth-child(2)"
-                ).innerText || "";
+              document.querySelector(
+                "#info-general > div:nth-child(4) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(8) > div:nth-child(2)"
+              ).innerText === "Trong nước"
+                ? (jsonLinks.trongnuoc_quocte = 1)
+                : (jsonLinks.trongnuoc_quocte = 0);
               jsonLinks.phuong_thuc_lua_chon_nha_thau =
                 document.querySelector(
                   "#info-general > div:nth-child(4) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(8) > div:nth-child(2)"
@@ -309,14 +318,26 @@ const muasam = (async () => {
                 ).innerText || "";
             }
 
+            // hình thức đấu thầu
+            document.querySelector(
+              "#info-general > div:nth-child(5) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(1) > div:nth-child(2) > span"
+            ).innerText === "Qua mạng"
+              ? (jsonLinks.hinh_thuc_dau_thau = 0)
+              : (jsonLinks.hinh_thuc_dau_thau = 1);
+
             jsonLinks.dia_diem_phat_hanh_hsmt =
               document.querySelector(
                 "#info-general > div:nth-child(5) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(2) > div:nth-child(2)"
               ).innerText || "";
-            jsonLinks.gia_ban_hsmt =
-              document.querySelector(
-                "#info-general > div:nth-child(5) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2)"
-              ).innerText || "";
+
+            //chi phí nộp hồ sơ
+            const gb_hsmt = document.querySelector(
+              "#info-general > div:nth-child(5) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2)"
+            ).innerText;
+            jsonLinks.gia_ban_hsmt = parseFloat(
+              gb_hsmt.replace(/,/g, "").replace(" VND", "")
+            );
+
             jsonLinks.dia_diem_nhan_HSDT =
               document.querySelector(
                 "#info-general > div:nth-child(5) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(4) > div:nth-child(2)"
@@ -325,14 +346,15 @@ const muasam = (async () => {
               document.querySelector(
                 "#info-general > div:nth-child(5) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(5) > div:nth-child(2) > p"
               ).innerText || "";
-            jsonLinks.thoi_diem_dong_thau =
-              document.querySelector(
-                "#info-general > div:nth-child(6) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(1) > div:nth-child(2)"
-              ).innerText || "";
-            jsonLinks.thoi_diem_mo_thau =
-              document.querySelector(
-                "#info-general > div:nth-child(6) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(2) > div:nth-child(2)"
-              ).innerText || "";
+
+            jsonLinks.thoi_diem_dong_thau = document.querySelector(
+              "#info-general > div:nth-child(6) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(1) > div:nth-child(2)"
+            ).innerText;
+
+            // const tdmt =;
+            jsonLinks.thoi_diem_mo_thau = document.querySelector(
+              "#info-general > div:nth-child(6) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(2) > div:nth-child(2)"
+            ).innerText;
             jsonLinks.dia_diem_mo_thau =
               document.querySelector(
                 "#info-general > div:nth-child(6) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2)"
@@ -360,10 +382,12 @@ const muasam = (async () => {
               document.querySelector(
                 "#info-general > div:nth-child(7) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(1) > div:nth-child(2)"
               ).innerText || "";
-            jsonLinks.ngay_phe_duyet =
-              document.querySelector(
-                "#info-general > div:nth-child(7) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(2) > div:nth-child(2)"
-              ).innerText || "";
+
+            //ngày phê duyệt
+            jsonLinks.ngay_phe_duyet = document.querySelector(
+              "#info-general > div:nth-child(7) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(2) > div:nth-child(2)"
+            ).innerText;
+
             jsonLinks.co_quan_ban_hanh_quyet_dinh =
               document.querySelector(
                 "#info-general > div:nth-child(7) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2)"
@@ -376,6 +400,78 @@ const muasam = (async () => {
             //   .click();
             return jsonLinks;
           });
+
+          data.ngay_phe_duyet = moment(data.ngay_phe_duyet, "DD/MM/YYYY");
+          data.thoi_diem_dong_thau = moment(
+            data.thoi_diem_dong_thau,
+            "DD/MM/YYYY"
+          );
+          data.thoi_diem_mo_thau = moment(data.thoi_diem_mo_thau, "DD/MM/YYYY");
+
+          //1--
+          if (data.chu_dau_tu === "") {
+            data.chu_dau_tu = 0;
+          } else {
+            const checkInvestorsId = await MODELS.findOne(biddingPartys, {
+              where: {
+                biddingPartysName: data.chu_dau_tu,
+              },
+            }).catch((err) => {
+              console.log("err", err);
+            });
+            if (checkInvestorsId) {
+              data.chu_dau_tu = Number(checkInvestorsId.id);
+            } else {
+              const createInvestorsId = await MODELS.create(biddingPartys, {
+                biddingPartysName: data.chu_dau_tu,
+              }).catch((err) => {
+                console.log(err);
+              });
+              data.chu_dau_tu = Number(createInvestorsId.id);
+            }
+          }
+
+          // if (data.linh_vuc === "") {
+          //   data.linh_vuc = 0;
+          // } else {
+          //   const checkFields = await MODELS.findOne(fields, {
+          //     where: {
+          //       fieldsName: data.linh_vuc,
+          //       status: 1,
+          //     },
+          //   }).catch((err) => {
+          //     console.log(err);
+          //   });
+          //   if (checkFields) {
+          //     data.linh_vuc = Number(checkFields.id);
+          //   } else {
+          //     const createFields = await MODELS.create(fields, {
+          //       fieldsName: data.linh_vuc,
+          //       status: 1,
+          //     }).catch((err) => {
+          //       console.log(err);
+          //     });
+          //     data.linh_vuc = Number(createFields.id);
+          //   }
+          // }
+          // if (data.ben_moi_thau) {
+          //   const checkBiddingPartysId = await MODELS.findOne(biddingPartys, {
+          //     where: { biddingPartysName: data.ben_moi_thau },
+          //   }).catch((err) => {
+          //     console.log(err);
+          //   });
+          //   if (checkBiddingPartysId) {
+          //     data.ben_moi_thau = Number(checkBiddingPartysId.id);
+          //   } else {
+          //     const createBiddingPartysId = await MODELS.create(biddingPartys, {
+          //       biddingPartysName: data.ben_moi_thau,
+          //     }).catch((err) => {
+          //       console.log(err);
+          //     });
+          //     if (createBiddingPartysId)
+          //       data.ben_moi_thau = createBiddingPartysId.id;
+          //   }
+          // }
           await newPage.evaluate(() => {
             document.querySelector("#info-general > div.mb-2 > span").click();
           });
@@ -386,57 +482,8 @@ const muasam = (async () => {
             downloadPath:
               "C:\\Users\\minhh\\OneDrive\\Desktop\\doc-bao\\pdf\\" + fileName,
           });
-          await new Promise((resolve) => setTimeout(resolve, 3000));
+          await new Promise((resolve) => setTimeout(resolve, 2000));
 
-          await newPage.evaluate(() => {
-            document
-              .querySelector("#tenderNotice > ul > li:nth-child(2) > a")
-              .click();
-          });
-          await new Promise((resolve) => setTimeout(resolve, 3000));
-          // const pdf = await newPage.$$(
-          //   "#file-tender-invitation > div > div > table > tbody > tr"
-          // );
-          // const tableData = await Promise.all(
-          //   pdf.map(async (row) => {
-          //     await new Promise((resolve) => setTimeout(resolve, 2000));
-          //     const cells = await row.$$("td > table > tbody > tr");
-          //     const childRow = await Promise.all(
-          //       cells.map(async (child) => {
-          //         await new Promise((resolve) => setTimeout(resolve, 2000));
-          //         // console.log("c", child);
-
-          //         // const text = await newPage.evaluate(() => {
-          //         //   child.querySelector("td:nth-child(2) > span").innerText;
-          //         // });
-          //         console.log("c", child);
-          //         const text = await newPage.evaluate(
-          //           (child) =>
-          //             child.querySelector("td:nth-child(2) > span").innerText
-          //         );
-
-          //         console.log("d", text);
-          //         await new Promise((resolve) => setTimeout(resolve, 2000));
-          //       })
-          //     );
-          //   })
-          // );
-          await newPage.evaluate(() => {
-            document
-              .querySelector(
-                "#file-tender-invitation > div > div > table > thead > tr > th:nth-child(2) > span:nth-child(2) > span"
-              )
-              .click();
-          });
-          // await new Promise((resolve) => setTimeout(resolve, 2000));
-
-          const pagedirex = await browser.waitForTarget(
-            (target) => target.opener() === newPage
-          );
-
-          // await new Promise((resolve) => setTimeout(resolve, 1000));
-          const currentUrl = pagedirex.url();
-          console.log("u", currentUrl);
           await newPage.evaluate(() => {
             document
               .querySelector(
@@ -444,7 +491,6 @@ const muasam = (async () => {
               )
               .click();
           });
-
           await new Promise((resolve) => setTimeout(resolve, 10000));
 
           // await page.waitForSelector("tbody", { visible: true });
@@ -453,12 +499,25 @@ const muasam = (async () => {
             const rows = document.querySelectorAll(
               ".card-body.item-table > table > tbody > tr"
             );
-            const infor = [];
 
+            const infor = [];
+            const gia_goi_thau = document.querySelector(
+              "#tab1 > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(1) > div:nth-child(2) > span"
+            ).innerText;
+            infor.push({
+              money: parseFloat(
+                gia_goi_thau.replace(/[^\d.-]/g, "").replace(/\./g, "")
+              ),
+              moneyString: document.querySelector(
+                "#tab1 > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(2) > div:nth-child(2)"
+              ).innerText,
+            });
             for (const row of rows) {
               const cells = row.querySelectorAll("td");
-              const [ten_goi_thau, linh_vuc, gia_goi_thau, nguon_von] = cells;
+              const [stt, ten_goi_thau, linh_vuc, gia_goi_thau, nguon_von] =
+                cells;
               infor.push({
+                stt: stt.innerText,
                 ten_goi_thau: ten_goi_thau.innerText,
                 linh_vuc: linh_vuc.innerText,
                 gia_goi_thau: gia_goi_thau.innerText,
@@ -470,18 +529,53 @@ const muasam = (async () => {
           mid = infor.length / 2;
 
           data.infor = infor.splice(0, mid);
-          // await newPage.close();
+
+          // await MODELS.create(bids, {
+          //   tbmtCode: data.ma_TBMT,
+          //   bidsName: data.ten_goi_thau,
+          //   biddingPartysId: data.ben_moi_thau,
+          //   investorsId: data.chu_dau_tu,
+          //   capital: data.nguon_von,
+          //   fieldsId: data.linh_vuc,
+          //   contractorSelectionType: data.hinh_thuc_lua_chon_nha_thau,
+          //   contractorSelectionMethod: data.phuong_thuc_lua_chon_nha_thau,
+          //   contractType: data.loai_hop_dong,
+          //   isDomestic: data.trongnuoc_quocte,
+          //   contractDuration: data.thoi_gian_thuc_hien_hop_dong,
+          //   biddingForm: data.hinh_thuc_dau_thau,
+          //   locationRelease: data.dia_diem_phat_hanh_hsmt,
+          //   locationPickUp: data.dia_diem_nhan_HSDT,
+          //   expense: data.gia_ban_hsmt,
+          //   locationOpening: data.dia_diem_mo_thau,
+          //   startDate: data.thoi_diem_mo_thau,
+          //   endDate: data.thoi_diem_dong_thau,
+          //   bidValidity: data.hieu_luc_ho_so,
+          //   approvalDecisionsNumber: data.so_quuet_dinh_phe_duyet,
+          //   approvalDecisionsDate: data.ngay_phe_duyet,
+          //   approvalDecisionsAgencies: data.co_quan_ban_hanh_quyet_dinh,
+          //   bidGuarantee: data.hinh_thuc_dam_bao,
+          //   projectsId: 0,
+          //   url: link,
+          //   downloadUrl: urlDownload,
+          //   // money: data.infor[0].money,
+          //   money: 0
+          // }).catch((err) => {
+          //   console.log("err", err);
+          // });
+          await new Promise((resolve) => setTimeout(resolve, 10000));
+
+          await newPage.close();
+
           return data;
         })
       )
     );
-    await new Promise((resolve) => setTimeout(resolve, 35000));
+    await new Promise((resolve) => setTimeout(resolve, 30000));
   }
-
+  // console.log(promises);
   const data = await Promise.all(promises);
   fs.writeFileSync("links.json", JSON.stringify(data));
 
-  // console.log(data);
   // async.parallelLimit(tasks, 1, (err, results) => {
   //   if (err) {
   //     console.error(err);

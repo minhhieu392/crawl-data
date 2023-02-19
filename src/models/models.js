@@ -1,5 +1,5 @@
-import Promise from '../utils/promise.js';
-import * as ApiErrors from '../errors';
+import Promise from "../utils/promise.js";
+import * as ApiErrors from "../errors";
 
 /**
  * ModelEntity Class
@@ -13,12 +13,12 @@ class ModelEntity {
   static count(model, options) {
     return Promise.try(() => {
       return model.count(options);
-    }).catch(error => {
+    }).catch((error) => {
       throw new ApiErrors.BaseError({
         statusCode: 202,
-        type: 'getListError',
+        type: "getListError",
         error,
-        name: model + 'Entity'
+        name: model + "Entity",
       });
     });
   }
@@ -31,12 +31,12 @@ class ModelEntity {
   static findAndCountAll(model, options) {
     return Promise.try(() => {
       return model.findAndCountAll(options);
-    }).catch(error => {
+    }).catch((error) => {
       throw new ApiErrors.BaseError({
         statusCode: 202,
-        type: 'getListError',
+        type: "getListError",
         error,
-        name: model + 'Entity'
+        name: model + "Entity",
       });
     });
   }
@@ -51,13 +51,13 @@ class ModelEntity {
       // console.log("entity in model: ", entity);
 
       return model.create(entity);
-    }).catch(error => {
-      console.log(error)
+    }).catch((error) => {
+      console.log(error);
       throw new ApiErrors.BaseError({
         statusCode: 202,
-        type: 'crudError',
+        type: "crudError",
         error,
-        name: model + 'Entity'
+        name: model + "Entity",
       });
     });
   }
@@ -90,12 +90,12 @@ class ModelEntity {
   static bulkCreate(model, entity) {
     return Promise.try(() => {
       return model.bulkCreate(entity);
-    }).catch(error => {
+    }).catch((error) => {
       throw new ApiErrors.BaseError({
         statusCode: 202,
-        type: 'crudError',
+        type: "crudError",
         error,
-        name: 'ServicePackagesArticleEntity'
+        name: "ServicePackagesArticleEntity",
       });
     });
   }
@@ -111,12 +111,12 @@ class ModelEntity {
       //console.log("entity==",entity)
       //console.log("options==",options)
 
-      return model.update(entity, options).catch(error => {
+      return model.update(entity, options).catch((error) => {
         throw new ApiErrors.BaseError({
           statusCode: 202,
-          type: 'crudError',
+          type: "crudError",
           error,
-          name: model + 'Entity'
+          name: model + "Entity",
         });
       });
     });
@@ -130,12 +130,12 @@ class ModelEntity {
   static destroy(model, options) {
     return Promise.try(() => {
       return model.destroy(options);
-    }).catch(error => {
+    }).catch((error) => {
       throw new ApiErrors.BaseError({
         statusCode: 202,
-        type: 'deleteError',
+        type: "deleteError",
         error,
-        name: model + 'Entity'
+        name: model + "Entity",
       });
     });
   }
@@ -150,12 +150,12 @@ class ModelEntity {
       // console.log("findOne=== options=========",options)
 
       return model.findOne(options);
-    }).catch(error => {
+    }).catch((error) => {
       throw new ApiErrors.BaseError({
         statusCode: 202,
-        type: 'getInfoError',
+        type: "getInfoError",
         error,
-        name: model + 'Entity'
+        name: model + "Entity",
       });
     });
   }
@@ -167,14 +167,14 @@ class ModelEntity {
    */
   static findAll(model, options) {
     return Promise.try(() => {
-      console.log("findAll=========",options)
+      // console.log("findAll=========",options)
       return model.findAll(options);
-    }).catch(error => {
+    }).catch((error) => {
       throw new ApiErrors.BaseError({
         statusCode: 202,
-        type: 'getListError',
+        type: "getListError",
         error,
-        name: model + 'Entity'
+        name: model + "Entity",
       });
     });
   }
@@ -188,12 +188,12 @@ class ModelEntity {
     return Promise.try(() => {
       return model.findOrCreate(options);
       // .spread(async (findReportImExCreate, created) => {
-    }).catch(error => {
+    }).catch((error) => {
       throw new ApiErrors.BaseError({
         statusCode: 202,
-        type: 'getListError',
+        type: "getListError",
         error,
-        name: model + 'Entity'
+        name: model + "Entity",
       });
     });
   }
@@ -206,83 +206,82 @@ class ModelEntity {
    */
   static createOrUpdate(model, entity, options) {
     return new Promise((resolve, reject) => {
-      return model.findOne(options).then(foundItem => {
-         console.log( "options", options)
+      return model.findOne(options).then((foundItem) => {
+        // console.log("options", options);
 
-         console.log( "entity", entity)
+        // console.log("entity", entity);
 
-        console.log( "foundItem==================", foundItem)
+        console.log("foundItem==================", foundItem);
         if (!foundItem) {
-           console.log("tao moi==============",entity)
+          // console.log("tao moi==============", entity);
 
-          return  model
+          return model
             .create(entity)
-            .then(data1 => {
+            .then((data1) => {
               // console.log('item create: ', data1.dataValues);
 
               const output = {
                 item: data1.dataValues,
-                created: true
-              }
+                created: true,
+              };
 
               resolve(output);
             })
-            .catch(error => {
+            .catch((error) => {
               throw new ApiErrors.BaseError({
                 statusCode: 202,
-                type: 'crudError',
+                type: "crudError",
                 error,
-                name: model + 'Entity'
+                name: model + "Entity",
               });
             });
         }
 
-
         return model
           .update(entity, options)
-          .then(async data1 => {
-            console.log("update foundItem.id ",foundItem.id);
+          .then(async (data1) => {
+            console.log("update foundItem.id ", foundItem.id);
             await model
               .findOne({
                 where: {
-                  id: foundItem.id
-                }
+                  id: foundItem.id,
+                },
               })
-              .then(data2 => {
-                console.log('data find khi update 2: ');
-                console.log('data find khi update: ', data2.dataValues);
+              .then((data2) => {
+                // console.log("data find khi update 2: ");
+                // console.log("data find khi update: ", data2.dataValues);
                 const output = {
                   item: data2.dataValues,
-                  created: false
-                }
+                  created: false,
+                };
 
-                resolve(output)
+                resolve(output);
               })
-              .catch(error => {
+              .catch((error) => {
                 throw new ApiErrors.BaseError({
                   statusCode: 202,
-                  type: 'crudError',
+                  type: "crudError",
                   error,
-                  name: model + 'Entity'
+                  name: model + "Entity",
                 });
               });
           })
-          .catch(error => {
+          .catch((error) => {
             throw new ApiErrors.BaseError({
               statusCode: 202,
-              type: 'crudError',
+              type: "crudError",
               error,
-              name: model + 'Entity'
+              name: model + "Entity",
             });
           });
       });
       // .spread(async (findReportImExCreate, created) => {
-    }).catch(error => {
+    }).catch((error) => {
       throw new ApiErrors.BaseError({
         statusCode: 202,
-        type: 'getListError',
+        type: "getListError",
         error,
-        name: model + 'Entity'
+        name: model + "Entity",
       });
     });
   }
@@ -295,12 +294,12 @@ class ModelEntity {
    */
   static upsert(model, entity, options) {
     return Promise.try(() => {
-      return model.upsert(entity, options).catch(error => {
+      return model.upsert(entity, options).catch((error) => {
         throw new ApiErrors.BaseError({
           statusCode: 202,
-          type: 'crudError',
+          type: "crudError",
           error,
-          name: model + 'Entity'
+          name: model + "Entity",
         });
       });
     });
@@ -312,22 +311,17 @@ class ModelEntity {
    * @param {Object} options
    */
   static increment(model, entity, options) {
-
     return Promise.try(() => {
-
-      return model.increment(entity, options).catch(error => {
-
+      return model.increment(entity, options).catch((error) => {
         throw new ApiErrors.BaseError({
           statusCode: 202,
-          type: 'crudError',
+          type: "crudError",
           error,
-          name: model + 'Entity'
+          name: model + "Entity",
         });
       });
     });
   }
-
-
 }
 
 export default ModelEntity;

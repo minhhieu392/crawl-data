@@ -1,0 +1,465 @@
+10-02-2023	34:27:09-----searchAndGetLink---14---Error: Error: failed to find element matching selector "#search-advantage-haunt > div > div > div > div.content__body234 > div:nth-child(3) > div.content__body__session__desc > div > div:nth-child(1) > span > div > input"
+10-02-2023	35:27:09-----searchAndGetLink---2---Error: Error: failed to find element matching selector "#search-advantage-haunt > div > div > div > div.content__body234 > div:nth-child(3) > div.content__body__session__desc > div > div:nth-child(1) > span > div > input"
+10-02-2023	35:27:09-----searchAndGetLink---1---Error: Error: failed to find element matching selector "#search-advantage-haunt > div > div > div > div.content__body234 > div:nth-child(3) > div.content__body__session__desc > div > div:nth-child(1) > span > div > input"
+10-02-2023	35:27:09-----searchAndGetLink---15---Error: Error: failed to find element matching selector "#search-advantage-haunt > div > div > div > div.content__body234 > div:nth-child(3) > div.content__body__session__desc > div > div:nth-child(1) > span > div > input"
+10-02-2023	08:35:09-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=4ab2c019-1b4b-4d16-9cf1-e786c7da5255&notifyId=4ab2c019-1b4b-4d16-9cf1-e786c7da5255&inputResultId=d2b3893d-f22c-4256-aa67-9ff47848485e&bidOpenId=6ea962fc-a21f-481b-b791-7e94ee5c0047&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200045467&planNo=PL2200042405&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option"
+10-02-2023	38:43:09-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-2-kqmt&id=6ab3adc6-6d68-42a7-9d55-643bf0f677de&notifyId=6ab3adc6-6d68-42a7-9d55-643bf0f677de&inputResultId=undefined&bidOpenId=0d194219-1b15-48a0-89d0-d0d876095343&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200043446&planNo=PL2200042095&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option"
+10-02-2023	07:44:09-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-3-dsntdkt&id=504d62f5-5863-4553-8388-c569d5dabb8e&notifyId=504d62f5-5863-4553-8388-c569d5dabb8e&inputResultId=undefined&bidOpenId=a0b56954-3a7b-4f82-9e26-78d0caf9d73c&techReqId=bc8b9dce-6ef6-4e1d-8d22-8d3647736f0f&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_HTHS&notifyNo=IB2200072206&planNo=PL2200062040&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option"
+10-02-2023	09:44:09-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-3-dsntdkt&id=504d62f5-5863-4553-8388-c569d5dabb8e&notifyId=504d62f5-5863-4553-8388-c569d5dabb8e&inputResultId=undefined&bidOpenId=a0b56954-3a7b-4f82-9e26-78d0caf9d73c&techReqId=bc8b9dce-6ef6-4e1d-8d22-8d3647736f0f&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_HTHS&notifyNo=IB2200072206&planNo=PL2200062040&pno=undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:3:185
+10-02-2023	09:44:09-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-3-dsntdkt&id=504d62f5-5863-4553-8388-c569d5dabb8e&notifyId=504d62f5-5863-4553-8388-c569d5dabb8e&inputResultId=undefined&bidOpenId=a0b56954-3a7b-4f82-9e26-78d0caf9d73c&techReqId=bc8b9dce-6ef6-4e1d-8d22-8d3647736f0f&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_HTHS&notifyNo=IB2200072206&planNo=PL2200062040&pno=undefined---TypeError: Cannot read properties of undefined (reading 'ngay_phe_duyet')
+10-02-2023	19:52:09-----pushData---IB2200091522---TypeError: Cannot read properties of undefined (reading 'ten_goi_thau')
+10-02-2023	28:52:09-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-3-dsntdkt&id=504d62f5-5863-4553-8388-c569d5dabb8e&notifyId=504d62f5-5863-4553-8388-c569d5dabb8e&inputResultId=undefined&bidOpenId=a0b56954-3a7b-4f82-9e26-78d0caf9d73c&techReqId=bc8b9dce-6ef6-4e1d-8d22-8d3647736f0f&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_HTHS&notifyNo=IB2200072206&planNo=PL2200062040&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option"
+10-02-2023	12:55:09-----pushData---IB2200031432---TypeError: Cannot read properties of undefined (reading 'ten_goi_thau')
+10-02-2023	22:56:09-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=581c188d-647c-4395-b08b-296aadb404a0&notifyId=581c188d-647c-4395-b08b-296aadb404a0&inputResultId=undefined&bidOpenId=undefined&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2300011890&planNo=PL2300006907&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option"
+10-02-2023	37:56:09-----pushData---IB2300011890---TypeError: Cannot read properties of undefined (reading 'ten_goi_thau')
+10-02-2023	29:23:10-----pushData---IB2200079688---TypeError: Cannot read properties of undefined (reading 'ten_goi_thau')
+10-02-2023	41:23:10-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=fcbc96f8-2b75-4b30-aea1-cbedd4c3f299&notifyId=fcbc96f8-2b75-4b30-aea1-cbedd4c3f299&inputResultId=ae0dd3f2-2010-4724-875c-cece11109277&bidOpenId=8bcc0025-f6e3-4342-9384-ae5e0f9f03a7&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200091522&planNo=PL2200077394&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option"
+10-02-2023	56:23:10-----pushData---IB2200091522---TypeError: Cannot read properties of undefined (reading 'ten_goi_thau')
+10-02-2023	26:24:10-----pushData---IB2200093264---TypeError: Cannot read properties of undefined (reading 'ten_goi_thau')
+10-02-2023	47:25:10-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=d3ccc7fc-3447-4135-9a34-0af18a879538&notifyId=d3ccc7fc-3447-4135-9a34-0af18a879538&inputResultId=7e2aab51-385f-459e-98c0-bd7a6d62ad3e&bidOpenId=e3e2a29a-4319-49b8-b3ec-63d1388eba4e&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200055710&planNo=PL2200051473&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option"
+10-02-2023	31:27:10-----pushData---IB2200093167---TypeError: Cannot read properties of undefined (reading 'ten_goi_thau')
+10-02-2023	57:11:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-2-kqmt&id=34d7dfce-8417-4acc-a649-a94be7a34b34&notifyId=34d7dfce-8417-4acc-a649-a94be7a34b34&inputResultId=undefined&bidOpenId=0b78e7cc-917d-406a-a301-4bfad35f3699&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087488&planNo=PL2200074477&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option"
+10-02-2023	10:12:11-----pushData---IB2200086063---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+10-02-2023	10:12:11-----pushData---IB2200086063---TypeError: Cannot read properties of undefined (reading 'id')
+10-02-2023	23:12:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=72cd5493-5bd3-45cf-9e67-430104c6a4cd&notifyId=72cd5493-5bd3-45cf-9e67-430104c6a4cd&inputResultId=c8355c60-36b7-48a3-a10b-553a3f910663&bidOpenId=28463ff1-5398-4b43-98da-883cfa34195d&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200090346&planNo=PL2200014409&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option"
+10-02-2023	25:12:11-----downloadWithURL---[object Object]---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+10-02-2023	51:12:11-----downloadWithURL---[object Object]---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+10-02-2023	08:43:11-----pushData---IB2300008993---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+10-02-2023	08:43:11-----pushData---IB2300008993---TypeError: Cannot read properties of undefined (reading 'id')
+10-02-2023	19:43:11-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=31b5b324-ac97-4eac-a3aa-a3d1101967ef&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+10-02-2023	40:43:11-----pushData---IB2300014991---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+10-02-2023	40:43:11-----pushData---IB2300014991---TypeError: Cannot read properties of undefined (reading 'id')
+10-02-2023	51:43:11-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=b9a78f27-7010-41e3-92fa-cb53a675feaf&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+10-02-2023	23:44:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=9109e335-86a2-453a-8ae2-76f7978bac1a&notifyId=9109e335-86a2-453a-8ae2-76f7978bac1a&inputResultId=undefined&bidOpenId=undefined&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_HTHS&notifyNo=IB2300010442&planNo=PL2300007714&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option:nth-child(2)"
+10-02-2023	25:44:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=9109e335-86a2-453a-8ae2-76f7978bac1a&notifyId=9109e335-86a2-453a-8ae2-76f7978bac1a&inputResultId=undefined&bidOpenId=undefined&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_HTHS&notifyNo=IB2300010442&planNo=PL2300007714&pno=undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:3:185
+10-02-2023	25:44:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-1-tbmt&id=9109e335-86a2-453a-8ae2-76f7978bac1a&notifyId=9109e335-86a2-453a-8ae2-76f7978bac1a&inputResultId=undefined&bidOpenId=undefined&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_HTHS&notifyNo=IB2300010442&planNo=PL2300007714&pno=undefined---TypeError: Cannot read properties of undefined (reading 'ngay_phe_duyet')
+13-02-2023	42:34:08-----pushData---IB2300017183---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	42:34:08-----pushData---IB2300017183---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	42:34:08-----pushData---IB2300017183---TypeError: Cannot read properties of undefined (reading 'id')
+13-02-2023	00:35:08-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=a02fe69e-977c-4bc3-a328-a1f2ea06c5e0&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+13-02-2023	28:43:08-----pushData---IB2300017954---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	48:43:08-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=e7df185f-e5bd-4652-8467-e55230b9ac67&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+13-02-2023	49:12:09-----pushData---IB2300017726---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	49:12:09-----pushData---IB2300017726---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	49:12:09-----pushData---IB2300017726---TypeError: Cannot read properties of undefined (reading 'id')
+13-02-2023	18:16:09-----pushData---IB2300017646---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	18:16:09-----pushData---IB2300017646---TypeError: Cannot read properties of undefined (reading 'id')
+13-02-2023	45:20:09-----pushData---IB2300017611---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	45:20:09-----pushData---IB2300017611---TypeError: Cannot read properties of undefined (reading 'id')
+13-02-2023	42:23:09-----pushData---IB2300015542---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	42:23:09-----pushData---IB2300015542---TypeError: Cannot read properties of undefined (reading 'id')
+13-02-2023	53:53:10-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=06be326a-77cb-482b-9613-2930c81a2b56&notifyId=06be326a-77cb-482b-9613-2930c81a2b56&inputResultId=1c7a2a1e-c3c1-489d-a03c-b4ff46172e76&bidOpenId=28bb89bd-ac22-41dc-a680-c02e794da36d&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087284&planNo=PL2200066437&pno=undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:42:200
+13-02-2023	53:53:10-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=06be326a-77cb-482b-9613-2930c81a2b56&notifyId=06be326a-77cb-482b-9613-2930c81a2b56&inputResultId=1c7a2a1e-c3c1-489d-a03c-b4ff46172e76&bidOpenId=28bb89bd-ac22-41dc-a680-c02e794da36d&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087284&planNo=PL2200066437&pno=undefined---TypeError: Cannot read properties of undefined (reading 'ngay_phe_duyet')
+13-02-2023	05:09:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=06be326a-77cb-482b-9613-2930c81a2b56&notifyId=06be326a-77cb-482b-9613-2930c81a2b56&inputResultId=1c7a2a1e-c3c1-489d-a03c-b4ff46172e76&bidOpenId=28bb89bd-ac22-41dc-a680-c02e794da36d&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087284&planNo=PL2200066437&pno=undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:42:200
+13-02-2023	05:09:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=06be326a-77cb-482b-9613-2930c81a2b56&notifyId=06be326a-77cb-482b-9613-2930c81a2b56&inputResultId=1c7a2a1e-c3c1-489d-a03c-b4ff46172e76&bidOpenId=28bb89bd-ac22-41dc-a680-c02e794da36d&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087284&planNo=PL2200066437&pno=undefined---TypeError: Cannot read properties of undefined (reading 'ngay_phe_duyet')
+13-02-2023	48:14:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=06be326a-77cb-482b-9613-2930c81a2b56&notifyId=06be326a-77cb-482b-9613-2930c81a2b56&inputResultId=1c7a2a1e-c3c1-489d-a03c-b4ff46172e76&bidOpenId=28bb89bd-ac22-41dc-a680-c02e794da36d&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087284&planNo=PL2200066437&pno=undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:42:200
+13-02-2023	48:14:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=06be326a-77cb-482b-9613-2930c81a2b56&notifyId=06be326a-77cb-482b-9613-2930c81a2b56&inputResultId=1c7a2a1e-c3c1-489d-a03c-b4ff46172e76&bidOpenId=28bb89bd-ac22-41dc-a680-c02e794da36d&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087284&planNo=PL2200066437&pno=undefined---TypeError: Cannot read properties of undefined (reading 'ngay_phe_duyet')
+13-02-2023	00:27:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=06be326a-77cb-482b-9613-2930c81a2b56&notifyId=06be326a-77cb-482b-9613-2930c81a2b56&inputResultId=1c7a2a1e-c3c1-489d-a03c-b4ff46172e76&bidOpenId=28bb89bd-ac22-41dc-a680-c02e794da36d&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087284&planNo=PL2200066437&pno=undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:42:200
+13-02-2023	00:27:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=06be326a-77cb-482b-9613-2930c81a2b56&notifyId=06be326a-77cb-482b-9613-2930c81a2b56&inputResultId=1c7a2a1e-c3c1-489d-a03c-b4ff46172e76&bidOpenId=28bb89bd-ac22-41dc-a680-c02e794da36d&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087284&planNo=PL2200066437&pno=undefined---TypeError: Cannot read properties of undefined (reading 'ngay_phe_duyet')
+13-02-2023	46:43:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=06be326a-77cb-482b-9613-2930c81a2b56&notifyId=06be326a-77cb-482b-9613-2930c81a2b56&inputResultId=1c7a2a1e-c3c1-489d-a03c-b4ff46172e76&bidOpenId=28bb89bd-ac22-41dc-a680-c02e794da36d&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087284&planNo=PL2200066437&pno=undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:42:200
+13-02-2023	46:43:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=06be326a-77cb-482b-9613-2930c81a2b56&notifyId=06be326a-77cb-482b-9613-2930c81a2b56&inputResultId=1c7a2a1e-c3c1-489d-a03c-b4ff46172e76&bidOpenId=28bb89bd-ac22-41dc-a680-c02e794da36d&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087284&planNo=PL2200066437&pno=undefined---TypeError: Cannot set properties of undefined (setting 'ho_so')
+13-02-2023	48:43:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=7ce79aec-d425-4934-8e00-03afb9285595&notifyId=7ce79aec-d425-4934-8e00-03afb9285595&inputResultId=f59d3b27-1ed0-419f-826f-24794cccf964&bidOpenId=cb2db4ad-a29d-442b-8aea-d0f1657d64be&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200103643&planNo=PL2200066437&pno=undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:42:200
+13-02-2023	48:43:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=7ce79aec-d425-4934-8e00-03afb9285595&notifyId=7ce79aec-d425-4934-8e00-03afb9285595&inputResultId=f59d3b27-1ed0-419f-826f-24794cccf964&bidOpenId=cb2db4ad-a29d-442b-8aea-d0f1657d64be&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200103643&planNo=PL2200066437&pno=undefined---TypeError: Cannot set properties of undefined (setting 'ho_so')
+13-02-2023	52:43:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-2-kqmt&id=b13bbbae-c251-441e-9f81-b3d9c97361df&notifyId=b13bbbae-c251-441e-9f81-b3d9c97361df&inputResultId=undefined&bidOpenId=e1562aa6-6d0a-407f-8e91-47459e4b82db&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087268&planNo=PL2200066437&pno=undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:42:200
+13-02-2023	52:43:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-2-kqmt&id=b13bbbae-c251-441e-9f81-b3d9c97361df&notifyId=b13bbbae-c251-441e-9f81-b3d9c97361df&inputResultId=undefined&bidOpenId=e1562aa6-6d0a-407f-8e91-47459e4b82db&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200087268&planNo=PL2200066437&pno=undefined---TypeError: Cannot set properties of undefined (setting 'ho_so')
+13-02-2023	06:02:12-----pushData---IB2200087284---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	10:02:12-----pushData---IB2200087307---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	13:02:12-----pushData---IB2300016572---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	16:02:12-----pushData---IB2300016553---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	46:02:12-----pushData---IB2200087268---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	50:02:12-----pushData---IB2200102125---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	53:02:12-----pushData---IB2200103643---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	56:02:12-----pushData---IB2200087307---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	25:03:12-----pushData---IB2200087257---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	29:03:12-----pushData---IB2200087284---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	33:03:12-----pushData---IB2200087293---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	13:22:12-----pushData---IB2200087284---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	19:22:12-----pushData---IB2200103643---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	25:22:12-----pushData---IB2200087268---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	57:22:12-----pushData---IB2300016553---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	11:23:12-----pushData---IB2300016572---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	36:23:12-----pushData---IB2200102125---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	52:23:12-----pushData---IB2200087257---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	00:24:12-----pushData---IB2200087284---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	18:24:12-----pushData---IB2200087293---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	45:25:12-----pushData---IB2200087307---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	48:25:12-----pushData---IB2200087307---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	07:41:13-----pushData---IB2200087293---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	11:41:13-----pushData---IB2200087257---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	13:41:13-----pushData---IB2300016572---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	55:49:13-----pushData---IB2200087284---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	57:49:13-----pushData---IB2200103643---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	01:50:13-----pushData---IB2200087268---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	13:50:13-----pushData---IB2200087307---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	35:50:13-----pushData---IB2200087307---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+13-02-2023	25:45:16-----pushData---IB2300018319---Error: data.ben_moi_thau OR data.biddingPartysCode is not available.
+13-02-2023	44:45:16-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=d98f2cbd-df1a-47c0-8ac5-cd04e5950dc6&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+14-02-2023	52:50:08-----downloadWithURL---undefined---Error: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 49
+14-02-2023	07:51:08-----downloadWithURL---undefined---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+14-02-2023	56:51:08-----downloadWithURL---undefined---Error: Protocol error (Page.navigate): Invalid parameters Failed to deserialize params.url - BINDINGS: mandatory field missing at position 49
+14-02-2023	11:52:08-----downloadWithURL---undefined---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+14-02-2023	58:28:10-----searchAndGetLink---1---Error: Protocol error (Runtime.callFunctionOn): Target closed.
+14-02-2023	27:40:12-----pushData---IB2300018947---Error: data.ben_moi_thau OR data.biddingPartysCode is not available.
+14-02-2023	49:40:12-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=b6f32f34-c9a0-4bd1-9f8a-79bc3e898609&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+14-02-2023	48:39:13-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=cc059a65-0352-4c52-9f6a-386a716769c5&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+14-02-2023	42:44:13-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=df8227f8-9f33-4a80-a9d7-083d6e6769ab&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+14-02-2023	07:52:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	08:52:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	09:52:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	07:53:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	08:53:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	09:53:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	22:59:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	23:59:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	24:59:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	25:59:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	26:59:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	27:59:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	28:59:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	29:59:14-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+14-02-2023	00:53:15-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2200106535&notifyId=IB2200106535&inputResultId=d45e0ba3-189a-4f85-b98f-b3b0594b5d68&bidOpenId=undefined&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=undefined&notifyNo=IB2200106535&planNo=undefined&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option"
+14-02-2023	05:53:15-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2200106535&notifyId=IB2200106535&inputResultId=d45e0ba3-189a-4f85-b98f-b3b0594b5d68&bidOpenId=undefined&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=undefined&notifyNo=IB2200106535&planNo=undefined&pno=undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:29:167
+14-02-2023	05:53:15-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2200106535&notifyId=IB2200106535&inputResultId=d45e0ba3-189a-4f85-b98f-b3b0594b5d68&bidOpenId=undefined&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=undefined&notifyNo=IB2200106535&planNo=undefined&pno=undefined---TypeError: Cannot set properties of undefined (setting 'ho_so')
+14-02-2023	07:53:15-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=IB2200106535&notifyId=IB2200106535&inputResultId=d45e0ba3-189a-4f85-b98f-b3b0594b5d68&bidOpenId=undefined&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=undefined&notifyNo=IB2200106535&planNo=undefined&pno=undefined---Error: Evaluation failed: TypeError: Cannot read property 'click' of null
+    at __puppeteer_evaluation_script__:2:169
+14-02-2023	23:13:16-----pushData---IB2300016718---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+14-02-2023	51:26:16-----pushData---IB2200097654---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+14-02-2023	18:36:16-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=975523e0-f428-476f-9e3e-b9dd30e5e2bc&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+14-02-2023	34:01:17-----searchAndGetLink---3---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(8) > div > div > div > div > div.ant-calendar-input-wrap > div > input"
+14-02-2023	35:01:17-----searchAndGetLink---3---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(9) > div > div > div > div > div.ant-calendar-input-wrap > div > input"
+14-02-2023	35:01:17-----searchAndGetLink---3---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(10) > div > div > div > div > div.ant-calendar-input-wrap > div > input"
+14-02-2023	35:01:17-----searchAndGetLink---3---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(11) > div > div > div > div > div.ant-calendar-input-wrap > div > input"
+14-02-2023	07:02:17-----searchAndGetLink---3---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(8) > div > div > div > div > div.ant-calendar-input-wrap > div > input"
+14-02-2023	07:02:17-----searchAndGetLink---3---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(9) > div > div > div > div > div.ant-calendar-input-wrap > div > input"
+14-02-2023	07:02:17-----searchAndGetLink---3---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(10) > div > div > div > div > div.ant-calendar-input-wrap > div > input"
+14-02-2023	07:02:17-----searchAndGetLink---3---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(11) > div > div > div > div > div.ant-calendar-input-wrap > div > input"
+14-02-2023	14:04:17-----searchAndGetLink---3---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(8) > div > div > div > div > div.ant-calendar-input-wrap > div > input"
+14-02-2023	01:02:18-----searchAndGetLink---16---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(8) > div > div > div > div > div.ant-calendar-input-wrap > div.ant-calendar-input"
+14-02-2023	01:02:18-----searchAndGetLink---16---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(8) > div > div > div > div > div.ant-calendar-input-wrap > div.ant-calendar-input .ant-calendar-input-invalid"
+14-02-2023	11:04:18-----searchAndGetLink---16---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(8) > div > div > div > div > div.ant-calendar-input-wrap > div.ant-calendar-input"
+14-02-2023	16:04:18-----searchAndGetLink---16---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(8) > div > div > div > div > div.ant-calendar-input-wrap > div.ant-calendar-input .ant-calendar-input-invalid"
+14-02-2023	44:06:18-----searchAndGetLink---16---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(8) > div > div > div > div > div.ant-calendar-input-wrap > div.ant-calendar-input"
+14-02-2023	49:06:18-----searchAndGetLink---16---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(8) > div > div > div > div > div.ant-calendar-input-wrap > div.ant-calendar-input .ant-calendar-input-invalid"
+14-02-2023	21:08:18-----searchAndGetLink---16---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(8) > div > div > div > div > div.ant-calendar-input-wrap > input.ant-calendar-input"
+14-02-2023	26:08:18-----searchAndGetLink---16---Error: Error: failed to find element matching selector "#senna_surface1 > div:nth-child(8) > div > div > div > div > div.ant-calendar-input-wrap > .ant-calendar-input .ant-calendar-input-invalid"
+15-02-2023	28:10:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	29:10:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	30:10:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	31:10:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	32:10:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	33:10:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	34:10:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	35:10:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	49:14:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	50:14:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	51:14:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	52:14:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	53:14:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	54:14:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	55:14:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	56:14:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	50:18:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	51:18:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	52:18:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	53:18:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	54:18:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	55:18:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	56:18:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	57:18:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	49:32:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	50:32:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	51:32:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	52:32:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	53:32:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	54:32:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	55:32:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	56:32:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	49:34:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	50:34:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	51:34:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	52:34:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	53:34:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	54:34:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	55:34:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	34:38:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	35:38:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	36:38:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	37:38:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	38:38:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	39:38:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	40:38:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	41:38:10-----checkLinkArray---[object Object]---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	22:39:10-----pushData---IB2200105516---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	22:39:10-----pushData---IB2200105516---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	23:39:10-----pushData---IB2300003285---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	23:39:10-----pushData---IB2300003285---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	26:39:10-----pushData---IB2300006606---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	26:39:10-----pushData---IB2300006606---TypeError: Cannot read properties of undefined (reading 'id')
+15-02-2023	43:39:10-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=d5d49bb9-b6db-45d6-855b-c88ad5496327&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	46:39:10-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=d5d49bb9-b6db-45d6-855b-c88ad5496327&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	05:40:10-----pushData---IB2300002146---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	05:40:10-----pushData---IB2300002146---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	07:40:10-----pushData---IB2300003462---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	07:40:10-----pushData---IB2300003462---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	25:40:10-----pushData---IB2300008119---BaseApiError => class extends Model {
+    }EntityError: Lỗi lấy thông tin
+15-02-2023	25:40:10-----pushData---IB2300008119---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	54:46:10-----pushData---IB2300002076---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	54:46:10-----pushData---IB2300002076---TypeError: Cannot read properties of undefined (reading 'id')
+15-02-2023	54:47:10-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=35edfb36-c7dc-43c2-a291-e91ee6374840&notifyId=35edfb36-c7dc-43c2-a291-e91ee6374840&inputResultId=6ada42c3-5666-44ef-8bde-331feed51729&bidOpenId=f584ffff-b977-458b-b6dd-f1bec331afab&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200105516&planNo=PL2200085998&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option"
+15-02-2023	30:48:10-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=d5d49bb9-b6db-45d6-855b-c88ad5496327&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	07:50:10-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=a3bc15c2-6a9b-418e-b7de-812c10d0f561&notifyId=a3bc15c2-6a9b-418e-b7de-812c10d0f561&inputResultId=06a4a04e-1ec7-4eea-98f0-6cf2662d604e&bidOpenId=d89852d5-f020-48cd-9c48-fd06d42d61d0&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2300004102&planNo=PL2300002992&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option"
+15-02-2023	53:50:10-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=59565b51-b56f-45a0-9296-9ad01a6e5119&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	06:07:11-----pushData---IB2200106338---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	06:07:11-----pushData---IB2200106338---TypeError: Cannot read properties of undefined (reading 'id')
+15-02-2023	10:07:11-----pushData---IB2200106535---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	10:07:11-----pushData---IB2200106535---TypeError: Cannot read properties of undefined (reading 'id')
+15-02-2023	36:43:11-----pushData---IB2200106338---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	36:43:11-----pushData---IB2200106338---TypeError: Cannot read properties of undefined (reading 'id')
+15-02-2023	41:43:11-----pushData---IB2200106535---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	41:43:11-----pushData---IB2200106535---TypeError: Cannot read properties of undefined (reading 'id')
+15-02-2023	51:48:11-----pushData---IB2200106338---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	55:48:11-----pushData---IB2200106535---BaseApiError => class extends Model {
+    }EntityError: Tạo hoặc sửa xảy ra lỗi
+15-02-2023	36:49:11-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=3dfa43db-63d4-4300-8766-c40cdb96dfce&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	39:49:11-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=d493d474-989f-4d4d-b1fc-fc0ba88d50e7&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	16:04:12-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=8e869f9b-8bef-4971-9e9d-80be84de907b&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	50:28:12-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=1b0719bc-168e-48d6-b054-473beba65e74&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	30:30:12-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=58b41bdb-ee09-46a9-8dbf-0ddee7a082ac&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	59:42:12-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=e1a65415-0503-40a7-8fc6-f23a42bce659&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	04:43:12-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=792e1a3d-24fd-41fb-b7b8-613154a991b8&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	38:50:12-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=c95d7840-c31f-4517-bfce-d14573f687ef&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	46:51:12-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=adc7db25-9de8-4a65-98cc-9d05e1c9a7b3&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	08:04:13-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=2124b082-9a6c-4e9f-adad-33e29d10edb9&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	57:35:13-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=48d03bae-27d5-4696-8dfa-0780c7497375&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	09:44:15-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=954171e5-3fb9-492b-9fa5-12f493f222da&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	04:17:17-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=0c18da4a-4de3-47d8-b275-dc91e8105f69&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	16:17:17-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=d193336e-4402-4899-a80c-6d235ccd8837&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+15-02-2023	48:17:17-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=40715937-d30f-44d0-8b82-69a15562fde1&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+16-02-2023	50:49:08-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=cda52ae3-f0ea-4382-ac52-a975d0a5b037&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+16-02-2023	39:05:09-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=530350d0-5c37-4982-9b21-c4aa3ccf19c4&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+16-02-2023	47:58:13-----searchAndGetLink---1---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:3:118
+16-02-2023	55:58:13-----searchAndGetLink---3---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:3:118
+16-02-2023	55:58:13-----searchAndGetLink---2---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:3:118
+16-02-2023	55:58:13-----searchAndGetLink---undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:3:118
+16-02-2023	55:58:13-----searchAndGetLink---undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:3:118
+16-02-2023	55:58:13-----searchAndGetLink---undefined---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:3:118
+16-02-2023	06:06:14-----searchAndGetLink---2---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:3:118
+16-02-2023	06:06:14-----searchAndGetLink---1---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:3:118
+16-02-2023	08:06:14-----searchAndGetLink---3---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:3:118
+16-02-2023	21:38:14-----searchAndGetLink---1---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:2:118
+16-02-2023	31:41:14-----searchAndGetLink---1---Error: Evaluation failed: TypeError: Cannot read property 'innerText' of null
+    at __puppeteer_evaluation_script__:2:118
+16-02-2023	40:41:16-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=50810dc2-2f96-46f7-80af-bd25e2e46ad8&notifyId=50810dc2-2f96-46f7-80af-bd25e2e46ad8&inputResultId=0fd4e865-8fcd-410a-b95a-b44c429e5e2c&bidOpenId=490e76f0-4191-47ba-bb37-6dffe724c415&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200039904&planNo=PL2200032890&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option:nth-child(3)"
+17-02-2023	55:36:08-----pushData---IB2300015921---ReferenceError: checkTotal is not defined
+17-02-2023	59:36:08-----pushData---IB2200101771---ReferenceError: checkTotal is not defined
+17-02-2023	03:37:08-----pushData---IB2300003555---ReferenceError: checkTotal is not defined
+17-02-2023	04:37:08-----pushData---IB2300005355---ReferenceError: checkTotal is not defined
+17-02-2023	13:37:08-----pushData---IB2200063272---ReferenceError: checkTotal is not defined
+17-02-2023	39:37:08-----pushData---IB2300011874---ReferenceError: checkTotal is not defined
+17-02-2023	48:37:08-----pushData---IB2200088200---ReferenceError: checkTotal is not defined
+17-02-2023	00:38:08-----pushData---IB2200108484---ReferenceError: checkTotal is not defined
+17-02-2023	14:38:08-----pushData---IB2200083041---ReferenceError: checkTotal is not defined
+17-02-2023	25:38:08-----pushData---IB2200007884---ReferenceError: checkTotal is not defined
+17-02-2023	35:38:08-----pushData---IB2200034693---ReferenceError: checkTotal is not defined
+17-02-2023	47:38:08-----pushData---IB2200108214---ReferenceError: checkTotal is not defined
+17-02-2023	59:38:08-----pushData---IB2200034218---ReferenceError: checkTotal is not defined
+17-02-2023	11:39:08-----pushData---IB2200053700---ReferenceError: checkTotal is not defined
+17-02-2023	21:39:08-----pushData---IB2300009180---ReferenceError: checkTotal is not defined
+17-02-2023	35:39:08-----pushData---IB2300003836---ReferenceError: checkTotal is not defined
+17-02-2023	48:39:08-----pushData---IB2200060133---ReferenceError: checkTotal is not defined
+17-02-2023	01:40:08-----pushData---IB2200085761---ReferenceError: checkTotal is not defined
+17-02-2023	13:40:08-----pushData---IB2200024646---ReferenceError: checkTotal is not defined
+17-02-2023	30:40:08-----pushData---IB2200015794---ReferenceError: checkTotal is not defined
+17-02-2023	37:40:08-----pushData---IB2300010241---ReferenceError: checkTotal is not defined
+17-02-2023	50:40:08-----pushData---IB2200013956---ReferenceError: checkTotal is not defined
+17-02-2023	02:41:08-----pushData---IB2200057179---ReferenceError: checkTotal is not defined
+17-02-2023	16:41:08-----pushData---IB2200044552---ReferenceError: checkTotal is not defined
+17-02-2023	26:41:08-----pushData---IB2200018381---ReferenceError: checkTotal is not defined
+17-02-2023	35:41:08-----pushData---IB2200000961---ReferenceError: checkTotal is not defined
+17-02-2023	39:41:08-----pushData---IB2300016675---ReferenceError: checkTotal is not defined
+17-02-2023	47:41:08-----pushData---IB2200099663---ReferenceError: checkTotal is not defined
+17-02-2023	59:41:08-----pushData---IB2300019103---ReferenceError: checkTotal is not defined
+17-02-2023	10:42:08-----pushData---IB2200009063---ReferenceError: checkTotal is not defined
+17-02-2023	19:42:08-----pushData---IB2200101446---ReferenceError: checkTotal is not defined
+17-02-2023	28:42:08-----pushData---IB2200103480---ReferenceError: checkTotal is not defined
+17-02-2023	41:42:08-----pushData---IB2200025152---ReferenceError: checkTotal is not defined
+17-02-2023	52:42:08-----pushData---IB2200025425---ReferenceError: checkTotal is not defined
+17-02-2023	06:43:08-----pushData---IB2200060896---ReferenceError: checkTotal is not defined
+17-02-2023	15:43:08-----pushData---IB2200103101---ReferenceError: checkTotal is not defined
+17-02-2023	28:43:08-----pushData---IB2300001131---ReferenceError: checkTotal is not defined
+17-02-2023	47:43:08-----pushData---IB2200072379---ReferenceError: checkTotal is not defined
+17-02-2023	02:44:08-----pushData---IB2200101573---ReferenceError: checkTotal is not defined
+17-02-2023	10:44:08-----pushData---IB2200022959---ReferenceError: checkTotal is not defined
+17-02-2023	13:44:08-----pushData---IB2200022959---ReferenceError: checkTotal is not defined
+17-02-2023	34:44:08-----pushData---IB2200101710---ReferenceError: checkTotal is not defined
+17-02-2023	36:44:08-----pushData---IB2200014971---ReferenceError: checkTotal is not defined
+17-02-2023	47:44:08-----pushData---IB2200039162---ReferenceError: checkTotal is not defined
+17-02-2023	00:45:08-----pushData---IB2200102951---ReferenceError: checkTotal is not defined
+17-02-2023	17:45:08-----pushData---IB2200102984---ReferenceError: checkTotal is not defined
+17-02-2023	24:45:08-----pushData---IB2200102969---ReferenceError: checkTotal is not defined
+17-02-2023	35:45:08-----pushData---IB2200101573---ReferenceError: checkTotal is not defined
+17-02-2023	51:45:08-----pushData---IB2200091033---ReferenceError: checkTotal is not defined
+17-02-2023	06:46:08-----pushData---IB2200038408---ReferenceError: checkTotal is not defined
+17-02-2023	24:46:08-----pushData---IB2300009886---ReferenceError: checkTotal is not defined
+17-02-2023	40:46:08-----pushData---IB2200061865---ReferenceError: checkTotal is not defined
+17-02-2023	43:46:08-----pushData---IB2200061865---ReferenceError: checkTotal is not defined
+17-02-2023	56:46:08-----pushData---IB2200072379---ReferenceError: checkTotal is not defined
+17-02-2023	11:47:08-----pushData---IB2200072379---ReferenceError: checkTotal is not defined
+17-02-2023	27:47:08-----pushData---IB2200091033---ReferenceError: checkTotal is not defined
+17-02-2023	31:47:08-----pushData---IB2200038408---ReferenceError: checkTotal is not defined
+17-02-2023	45:47:08-----pushData---IB2300009886---ReferenceError: checkTotal is not defined
+17-02-2023	41:49:08-----pushData---IB2200101573---ReferenceError: checkTotal is not defined
+17-02-2023	44:49:08-----pushData---IB2200038405---ReferenceError: checkTotal is not defined
+17-02-2023	48:49:08-----pushData---IB2200076040---ReferenceError: checkTotal is not defined
+17-02-2023	49:49:08-----pushData---IB2200069675---ReferenceError: checkTotal is not defined
+17-02-2023	19:25:09-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=623d9735-2063-4c22-9777-dfea1ab97fab&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+17-02-2023	21:29:09-----downloadWithURL---https://muasamcong.mpi.gov.vn/egp/contractorfe/viewer?formCode=ALL&id=62ee0d13-8102-4f19-b142-67758ac4e745&fileName=H%E1%BB%93%20s%C6%A1%20m%E1%BB%9Di%20th%E1%BA%A7u---Error: Error: failed to find element matching selector "#egp_body > ebid-viewer > div.p-3.fixed-top.bg-gray-200.ng-star-inserted > div > div.text-center.pt-3 > button"
+17-02-2023	46:40:09-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-4-kqlcnt&id=0468a68c-f905-4a1f-9a46-4c708d6d5704&notifyId=0468a68c-f905-4a1f-9a46-4c708d6d5704&inputResultId=35b802c9-f631-4db2-992a-0e354b22afe7&bidOpenId=8138f2e2-7d3f-4d59-9ea9-1e716b753b57&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2200094609&planNo=PL2200074235&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option:nth-child(3)"
+17-02-2023	05:00:10-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-2-kqmt&id=6bdeb31d-8189-4d1d-8fe8-c297cce003d1&notifyId=6bdeb31d-8189-4d1d-8fe8-c297cce003d1&inputResultId=undefined&bidOpenId=183f7844-bcab-4f50-9e6c-011aaa3dff66&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2300009857&planNo=PL2300006982&pno=undefined---Error: Error: failed to find element matching selector "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option:nth-child(3)"
+17-02-2023	24:04:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-2-kqmt&id=6bdeb31d-8189-4d1d-8fe8-c297cce003d1&notifyId=6bdeb31d-8189-4d1d-8fe8-c297cce003d1&inputResultId=undefined&bidOpenId=183f7844-bcab-4f50-9e6c-011aaa3dff66&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2300009857&planNo=PL2300006982&pno=undefined---Error---Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+17-02-2023	24:04:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-2-kqmt&id=6bdeb31d-8189-4d1d-8fe8-c297cce003d1&notifyId=6bdeb31d-8189-4d1d-8fe8-c297cce003d1&inputResultId=undefined&bidOpenId=183f7844-bcab-4f50-9e6c-011aaa3dff66&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2300009857&planNo=PL2300006982&pno=undefined---Error---TypeError: Cannot set properties of undefined (setting 'ho_so')
+17-02-2023	24:04:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-2-kqmt&id=6bdeb31d-8189-4d1d-8fe8-c297cce003d1&notifyId=6bdeb31d-8189-4d1d-8fe8-c297cce003d1&inputResultId=undefined&bidOpenId=183f7844-bcab-4f50-9e6c-011aaa3dff66&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2300009857&planNo=PL2300006982&pno=undefined---Error---Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+17-02-2023	24:04:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-2-kqmt&id=6bdeb31d-8189-4d1d-8fe8-c297cce003d1&notifyId=6bdeb31d-8189-4d1d-8fe8-c297cce003d1&inputResultId=undefined&bidOpenId=183f7844-bcab-4f50-9e6c-011aaa3dff66&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2300009857&planNo=PL2300006982&pno=undefined---Error---Error: Protocol error (Page.setDownloadBehavior): Session closed. Most likely the page has been closed.
+17-02-2023	26:04:11-----getDetails---https://muasamcong.mpi.gov.vn/web/guest/contractor-selection?p_p_id=egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2&p_p_lifecycle=0&p_p_state=normal&p_p_mode=view&_egpportalcontractorselectionv2_WAR_egpportalcontractorselectionv2_render=detail&type=es-notify-contractor&stepCode=notify-contractor-step-2-kqmt&id=6bdeb31d-8189-4d1d-8fe8-c297cce003d1&notifyId=6bdeb31d-8189-4d1d-8fe8-c297cce003d1&inputResultId=undefined&bidOpenId=183f7844-bcab-4f50-9e6c-011aaa3dff66&techReqId=undefined&bidPreNotifyResultId=undefined&bidPreOpenId=undefined&processApply=LDT&bidMode=1_MTHS&notifyNo=IB2300009857&planNo=PL2300006982&pno=undefined---Error---Error: Protocol error (Runtime.evaluate): Session closed. Most likely the page has been closed.
