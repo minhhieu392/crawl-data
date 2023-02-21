@@ -2,8 +2,9 @@ import _ from "lodash";
 import moment from "moment";
 import models from "../entity/index";
 import MODELS from "../models/models";
+import { sequelize } from "../db/sequelize";
 const logEvents = require("../utils/logEvents");
-const { bids, bidsSearchTerms } = models;
+const { bids, bidsSearchTerms, searchTerms } = models;
 
 const checkLinkArray = async (link) => {
   let str = link.code;
@@ -22,6 +23,16 @@ const checkLinkArray = async (link) => {
         searchTermsId: link.id,
       },
       { where: { bidsId: Number(checkBids.id), searchTermsId: link.id } }
+    ).catch((e) => {
+      let error = new Error(e);
+      logEvents(`checkLinkArray---${link}---${error.message}`);
+    });
+    await MODELS.update(
+      searchTerms,
+      {
+        currentCount: sequelize.literal("currentCount + 1"),
+      },
+      { where: { id: parseInt(link.id) } }
     ).catch((e) => {
       let error = new Error(e);
       logEvents(`checkLinkArray---${link}---${error.message}`);

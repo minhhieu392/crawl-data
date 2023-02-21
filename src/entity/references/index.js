@@ -8,7 +8,14 @@ export default (models) => {
     fields,
     searchTermsFields,
     applyProcess,
+    searchTermsNotices,
   } = models;
+
+  searchTermsNotices.belongsTo(searchTerms, {
+    foreignKey: "searchTermsId",
+    as: "searchTerms",
+  });
+
   districts.belongsTo(provinces, {
     foreignKey: "provincesId",
     as: "provinces",

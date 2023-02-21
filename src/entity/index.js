@@ -41,6 +41,7 @@ const modules = [
   require("./fields"),
   require("./searchTermsFields"),
   require("./applyProcess"),
+  require("./searchTermsNotices"),
 ];
 
 // Initialize models

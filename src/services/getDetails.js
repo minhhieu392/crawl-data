@@ -58,9 +58,14 @@ const searchAndGetLink = async (
   }
 
   await page.waitForTimeout(12000);
-
+  let lastVersionStatus = 0;
   let check_index_version = true;
-  if (linkAndData.version === "00") {
+  if (
+    linkAndData &&
+    linkAndData.versionStatus &&
+    linkAndData.version === "00"
+  ) {
+    lastVersionStatus = 1;
     await page
       .$eval(
         "#info-general > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2) > span > select > option",
@@ -101,6 +106,9 @@ const searchAndGetLink = async (
           let error = new Error(e);
           logEvents(`getDetails---${linkAndData.links}---${error.message}`);
         });
+      if (version === indexVersion.length) {
+        lastVersionStatus = 1;
+      }
     } else {
       check_index_version = false;
     }
@@ -381,14 +389,23 @@ const searchAndGetLink = async (
               "#info-general > div:nth-child(6) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(4) > div:nth-child(2)"
             ).innerText
           : "";
-
-        document.querySelector(
+        const tien_dam_bao_raw = document.querySelector(
           "#info-general > div:nth-child(6) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(5) > div:nth-child(2)"
         )
-          ? (jsonLinks.tien_dam_bao = document.querySelector(
+          ? document.querySelector(
               "#info-general > div:nth-child(6) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(5) > div:nth-child(2)"
-            ).innerText)
-          : (jsonLinks.tien_dam_bao = "");
+            ).innerText
+          : "";
+
+        jsonLinks &&
+          tien_dam_bao_raw &&
+          (jsonLinks.tien_dam_bao = parseFloat(
+            tien_dam_bao_raw.replace(/[^\d.-]/g, "").replace(/\./g, "")
+          )
+            ? parseFloat(
+                tien_dam_bao_raw.replace(/[^\d.-]/g, "").replace(/\./g, "")
+              )
+            : 0);
 
         document.querySelector(
           "#info-general > div:nth-child(6) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(6) > div:nth-child(2)"
@@ -564,12 +581,12 @@ const searchAndGetLink = async (
           : "0 VND";
 
         const gia_goi_thau_chu = document.querySelector(
-          "#tab1 > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(2) > div:nth-child(2)"
+          "#tab1 > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2)"
         )
           ? document.querySelector(
-              "#tab1 > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(2) > div:nth-child(2)"
+              "#tab1 > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(3) > div:nth-child(2)"
             ).innerText
-          : "";
+          : "#tab1 > div:nth-child(2) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(2) > div:nth-child(2)";
 
         const so_quyet_dinh = document.querySelector(
           "#tab1 > div:nth-child(3) > div.card-body.d-flex.flex-column.align-items-start.infomation > div:nth-child(1) > div:nth-child(2)"
@@ -624,6 +641,7 @@ const searchAndGetLink = async (
       });
     const url = {};
     const statusMap = {
+      "Không có nhà thầu trúng thầu": -3,
       "Chưa đóng thầu": 0,
       "Đã hủy TBMT": -2,
       "Đang xét thầu": 1,
@@ -643,6 +661,7 @@ const searchAndGetLink = async (
     data.infor = infor;
     data.version = linkAndData.version;
     urlDownloadAray.push(url);
+    data.lastVersionStatus = lastVersionStatus;
     // console.log("data", data);
     dataArray.push(data);
     await page.close();

@@ -6,6 +6,7 @@ import { sequelize } from "../db/sequelize";
 import { da } from "date-fns/locale";
 const logEvents = require("../utils/logEvents");
 const notifySlack = require("./testSlack");
+const sendLog = require("./sendLogService");
 
 const {
   bidsSearchTerms,
@@ -20,16 +21,17 @@ const {
 } = models;
 
 const pushData = async (data, checkResult) => {
-  console.log("push data", data.loopType);
+  // console.log("push data", data);
   const tenderNoticeFile = data.tenderNoticeFile ? data.tenderNoticeFile : null;
   const hsmt = data.hsmt ? data.hsmt : null;
   const inforData = data.infor;
 
   const co_quan_phe_duyet = inforData[0].co_quan_phe_duyet;
   const ngay_phe_duyet =
-    inforData && inforData.ngay_phe_duyet
+    inforData && inforData[0].ngay_phe_duyet
       ? moment(inforData[0].ngay_phe_duyet, "DD/MM/YYYY")
       : null;
+
   const so_quyet_dinh = inforData[0].so_quyet_dinh;
   const infoLength = inforData.length;
   var gia_goi_thau = 0;
@@ -198,10 +200,10 @@ const pushData = async (data, checkResult) => {
         approvalDecisionsAgencies: data.co_quan_ban_hanh_quyet_dinh,
         bidGuarantee: data.hinh_thuc_dam_bao,
         url: data.url,
-        money: gia_goi_thau,
+        money: data.tien_dam_bao,
         projectsId: parseInt(handleProjects),
         address: data.dia_diem_thuc_hien,
-        totalMoney: data.infor[0].money,
+        totalMoney: gia_goi_thau,
         parentId: parentId,
         version: data.version,
         biddingDocumentLink: data.ho_so,
@@ -210,14 +212,14 @@ const pushData = async (data, checkResult) => {
         dateCreated: data.ngay_dang_tai,
         status: data.status,
         biddingDocumentFile: "file",
+        lastVersionStatus: data.lastVersionStatus,
       }).catch((e) => {
         let error = new Error(e);
         logEvents(`pushData---${data.ma_TBMT}---${error.message}`);
       });
       checkResult.push(data.ma_TBMT);
-      const currentTime = moment().format("YYYY/MM/DD HH:mm");
-      const log = `_${currentTime}_--*Mess*--*${data.loopType}* \n *${data.id}*--${data.searchTitle} \n ${createBids.id}--${createBids.bidsName}`;
-      await notifySlack(log);
+      // await notifySlack(log);
+      await sendLog(data, createBids);
       if (createBids && data.version === "00") {
         const updateSearchTerm = await MODELS.update(
           searchTerms,
@@ -229,8 +231,6 @@ const pushData = async (data, checkResult) => {
           let error = new Error(e);
           logEvents(`pushData---${data.ma_TBMT}---${error.message}`);
         });
-        console.log("updateSearchTerm", updateSearchTerm[0]);
-
         if (updateSearchTerm) {
           const checkTotal = await MODELS.findOne(searchTerms, {
             where: {
@@ -249,7 +249,7 @@ const pushData = async (data, checkResult) => {
 
             const currentTime = moment().format("YYYY/MM/DD HH:mm");
             const log = `_${currentTime}_--*${typeEnd}*--*${data.loopType}* \n *${data.id}*--${data.searchTitle} \n curentCount: ${checkTotal.currentCount}`;
-            notifySlack(log);
+            await notifySlack(log);
           }
         }
 

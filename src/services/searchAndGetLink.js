@@ -5,6 +5,7 @@ import { sequelize } from "../db/sequelize";
 import moment from "moment";
 const logEvents = require("../utils/logEvents");
 const notifySlack = require("./testSlack");
+// const sendLog = require("./sendLogService");
 // import moment from "moment";
 
 const { searchTerms } = models;
@@ -274,11 +275,13 @@ const searchAndGetLink = async (
   const currentTime = moment().format("YYYY/MM/DD HH:mm");
   const log = `_${currentTime}_--*Start*--*${type_of_loop}* \n *${optionSearch.id}*--${searchTermsTitle} \n total: ${total}`;
   await notifySlack(log);
+  // await sendLog(optionSearch.id, log);
 
   await MODELS.update(
     searchTerms,
     {
       totalCount: Number(total),
+      currentCount: 0,
     },
     { where: { id: parseInt(id) } }
   ).catch((err) => {
@@ -397,6 +400,9 @@ const searchAndGetLink = async (
             dataJson.p_id = id_ho_so;
             if (dataJson.code && check_id_hs) {
               const mtbmt = dataJson.code.split("-")[1];
+              if (mtbmt === "00") {
+                dataJson.versionStatus = 0;
+              }
               for (let i = 0; i <= mtbmt; i++) {
                 let str = i.toString().padStart(2, "0");
                 dataJson.version = str;
@@ -407,6 +413,9 @@ const searchAndGetLink = async (
               }
             } else if (dataJson.code && !id_ho_so) {
               const mtbmt = dataJson.code.split("-")[1];
+              if (mtbmt === "00") {
+                dataJson.versionStatus = 0;
+              }
               for (let i = 0; i <= mtbmt; i++) {
                 let str = i.toString().padStart(2, "0");
                 dataJson.version = str;

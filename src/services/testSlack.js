@@ -3,7 +3,7 @@ const axios = require("axios");
 const notifySlack = async (log) => {
   const response = axios
     .post(
-      "https://hooks.slack.com/services/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",
+      "https://hooks.slack.com/services/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",
       {
         text: log,
       },

@@ -7,26 +7,20 @@ import checkSearch from "./services/checkSearch";
 import checkLinkArray from "./services/checkLinkArray";
 // import { muasam } from "./services/muasam";
 import moment from "moment";
+const express = require("express");
 import path from "path";
 import configs from "./configs";
 import _ from "lodash";
 import fs from "fs";
 import pushData from "./services/pushData";
-import test from "./services/test";
 import downloadWithURL from "./services/downloadWithURL";
 import getDetailSpecial from "./services/getDetailSpecial";
-import { timeEnd } from "console";
+const http = require("http");
+const bodyParser = require("body-parser");
 const logEvents = require("./utils/logEvents");
 const notifySlack = require("./services/testSlack");
-
-// const arrData = [
-//   709, 111, 113, 115, 511, 117, 711, 713, 715, 717, 201, 203, 401, 403, 601,
-//   205, 207, 801, 405, 603, 209, 407, 803, 605, 606, 805, 409, 807, 809, 211,
-//   213, 411, 215, 217, 811, 219, 813, 815, 816, 817, 819, 221, 101, 223, 103,
-//   301, 225, 302, 303, 501, 821, 305, 503, 701, 107, 823, 109, 703, 505, 507,
-//   705, 509, 707,
-// ];
-// test(arrData);
+// const sendLog = require("./services/sendLogService");
+const callSendAPI = require("./services/notifyFacebookService");
 
 const numberOfGetInfoWokers = Number(configs["NUMBER_OF_GET_INFO_WORKERS"]);
 if (!fs.existsSync(path.resolve(process.cwd(), configs["STORAGE_FOLDER"]))) {
@@ -41,10 +35,42 @@ if (configs["KEY_WORDS"] && configs["KEY_WORDS"].split(",")) {
     return el.trim();
   });
 }
-// const job = new cron.CronJob(
-//   "50 9 * * *",
-//   function () {
-//     console.log("Running the job");
+
+const app = express();
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
+app.get("/webhook", (req, res) => {
+  if (req.query["hub.verify_token"] === process.env.VERIFY_TOKEN) {
+    res.send(req.query["hub.challenge"]);
+  } else {
+    res.send("Error, wrong validation token");
+  }
+});
+
+app.post("/webhook", (req, res) => {
+  const webhook_event = req.body.entry[0];
+  if (webhook_event.messaging) {
+    webhook_event.messaging.forEach((event) => {
+      console.log(event);
+      const sender_psid = event.sender.id;
+      if (event.message && !event.message.is_echo) {
+        const message = {
+          text: "Hello, test 1234",
+        };
+        callSendAPI(sender_psid, message);
+      }
+    });
+  }
+  res.status(200).send("EVENT_RECEIVED");
+});
+app.listen(process.env.PORT || 1337, () => console.log("webhook is listening"));
+
 function timeout(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -249,6 +275,7 @@ const main = () => {
                 }
                 const log = `_${now}_--*End Loop*--*${type_of_loop}*--*${optionSearch.id}*--${optionSearch.title}`;
                 notifySlack(log);
+                // sendLog(optionSearch.id, log);
               }
             }, 1 * 24 * 60 * 60 * 1000);
 
@@ -311,6 +338,7 @@ const main = () => {
                 }
                 const log = `${now}--End Loop--${type_of_loop}--${optionSearch.id}--${optionSearch.title}`;
                 notifySlack(log);
+                // sendLog(optionSearch.id, log);
               }
             }, interval);
 
@@ -377,7 +405,7 @@ const main = () => {
     // // nếu có rồi chỉ cần lưu vào bảng bidsSearchTerms mà không cần quét lại
     // // chưa có => lưu vào mảng linkArrayAfterCheck để lấy detail
     setInterval(async () => {
-      console.log("so luong can lay chi tiet", linkArray.length);
+      // console.log("so luong can lay chi tiet", linkArray.length);
       if (linkArray.length > 0) {
         // console.log("1", linkArray);
         // check và lưu vào linkArrayAfterCheck
@@ -424,8 +452,15 @@ const main = () => {
 
     setInterval(async () => {
       let pageLength = (await context.pages()).length;
-      console.log("so du lieu can download", urlDownloadAray.length);
-      if (pageLength < tabMaxConfig) {
+      // console.log("so du lieu can download", urlDownloadAray.length);
+      if (
+        (pageLength < tabMaxConfig &&
+          dataArray === [] &&
+          linkArrayAfterCheck === [] &&
+          arrSpecial === [] &&
+          optionSearchLoop === [],
+        optionSearchList === [])
+      ) {
         if (urlDownloadAray.length > 0 && checkResult.length > 0) {
           checkResult.pop();
           const urlDownload = urlDownloadAray.pop();

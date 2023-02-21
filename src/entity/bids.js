@@ -198,6 +198,11 @@ module.exports = function (sequelize, DataTypes) {
         allowNull: true,
         field: "status",
       },
+      lastVersionStatus: {
+        type: DataTypes.INTEGER(1),
+        allowNull: true,
+        field: "lastVersionStatus",
+      },
     },
     {
       tableName: "bids",

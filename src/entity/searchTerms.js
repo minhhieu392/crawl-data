@@ -10,7 +10,7 @@ module.exports = function (sequelize, DataTypes) {
         field: "id",
       },
       searchTermsTitle: {
-        type: DataTypes.STRING(100),
+        type: DataTypes.TEXT,
         allowNull: false,
         field: "searchTermsTitle",
       },
